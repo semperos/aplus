@@ -4948,8 +4948,8 @@ static Rendition renditions[] = {
   {Weight_MASK, Weight_BOLD, 1},
   {Weight_MASK, Weight_FAINT, 2},
   {Weight_MASK, Weight_NORMAL, 22},
-  {Italicized_MASK, Italicized_MASK, 3},
-  {Italicized_MASK, 0, 23},
+  {(unsigned int)Italicized_MASK, (unsigned int)Italicized_MASK, 3},
+  {(unsigned int)Italicized_MASK, 0, 23},
   {Underline_MASK, Underline_SINGLE, 4},
   {Underline_MASK, Underline_DOUBLE, 21},
   {Underline_MASK, Underline_NONE, 24},
@@ -4967,9 +4967,9 @@ static Rendition renditions[] = {
   {Overlined_MASK, 0, 55},
   {Foreground_MASK, 0, 39},  /* Use default foreground */
   {Background_MASK, 0, 49},  /* Use default background */
-  {Foreground_MASK, NO_VALUE, -1},
-  {Background_MASK, NO_VALUE, -1},
-  {Font_MASK, NO_VALUE, -1},
+  {Foreground_MASK, (unsigned int)NO_VALUE, -1},
+  {Background_MASK, (unsigned int)NO_VALUE, -1},
+  {Font_MASK, (unsigned int)NO_VALUE, -1},
 };
 
 /*

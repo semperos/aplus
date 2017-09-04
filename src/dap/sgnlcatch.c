@@ -34,7 +34,7 @@ sgnlcatch(int n, void (*func) ())
 
   if ((n >= 1) && (n < NSIG)) {
     struct sgnl *p = sgnls + n;
-#if defined(HAVE_SVR4)  
+#if (defined(HAVE_SVR4) || defined(__linux__))
     struct sigaction *ovp;
     struct sigaction vec;
     ovp = (p->set == 0) ? &(p->orig) : (struct sigaction *) (0);

@@ -120,15 +120,15 @@ MSError::ErrorStatus MSFloat::internalSet(const char *pString_)
    { _real=0.0; setToValid(); return (MSError::MSSuccess); }
   else if (strncmp(pString_,"NaN",3)==0) 
    { _real=0.0; return (MSError::MSSuccess); }
-  else if ((np=strchr(pString_,'.'))&&(strchr(++np,'.')))
+  else if ((np=(char*)strchr(pString_,'.'))&&(strchr(++np,'.')))
    { return (MSError::BadReal); } // Disallow more than one decimal point
-  else if ((np=strchr(pString_,'.'))&&(strchr(++np,','))) 
+  else if ((np=(char*)strchr(pString_,'.'))&&(strchr(++np,','))) 
    { return (MSError::BadReal); } // Disallow commas after the decimal point
   else if (*pString_==',') 
    { return (MSError::BadReal); } // Disallow leading commas
   
   // Make sure we don't save too many characters after the decimal
-  char *decimal=strchr(pString_,'.');
+  char *decimal=(char*)strchr(pString_,'.');
   if ((decimal!=0)&&(strlen(decimal+1)>MSRealMaximumLength))
    { return (MSError::IntTooBig); }
   strcpy(buf,pString_);

@@ -22,7 +22,7 @@ sgnloriginal(int n)
     struct sgnl *p = sgnls + n;
 
     if (p->set != 0) {
-#if defined(HAVE_SVR4)
+#if (defined(HAVE_SVR4) || defined(__linux__))
       struct sigaction *ovp = &(p->orig);
 
       if (sigaction(n, ovp, (struct sigaction *) (0)) != 0) {
