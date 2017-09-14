@@ -9,7 +9,8 @@
    11 files were modified in order to get a successful build.
 
 ## Build & Install 
-``` git clone https://github.com/tavmem/aplus
+```
+    git clone https://github.com/tavmem/aplus
     cd aplus
     CFLAGS=-O2 CXXFLAGS=-O2
     ./configure --prefix=/usr/local
