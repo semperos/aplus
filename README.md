@@ -26,7 +26,7 @@
 
 ## Fonts for FireFox
    Go to  http://www.aplusdev.org/Download/index.html   ...  (near the end of the page).   
-   Download the True Type fonts for Windows works  (you can test it before the download)
+   Download the True Type fonts for Windows.  It works (you can test it before the download).
 ```
    mkdir ~/.fonts
    cp ~/Download/KAPL.TTF ~/.fonts/   
