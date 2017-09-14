@@ -1,13 +1,11 @@
 
 ## Introduction
-   see http://www.aplusdev.org/
-   This file documents a successful build of A+ on Fedora-26 with XEmcacs 21-4.34
-
-   This documentation may be incomplete (I'm writing it after the fact, and the process was not straithforward).
+   see http://www.aplusdev.org/  
+   This file documents a successful build of A+ on Fedora-26 with XEmcacs 21-4.34.  
+   This documentation may be incomplete (I'm writing it after the fact, and the process was not straightforward).
 
 ## Preparation
-   This repository was created by pulling down the source code (A+ 4.22-4) from  http://www.aplusdev.org/Download/index.html
-
+   This repository was created by pulling down the source code (A+ 4.22-4) from  http://www.aplusdev.org/Download/index.html  
    11 files were modified in order to get a successful build.
 
 ## Build & Install 
@@ -40,7 +38,7 @@
    sudo dnf install xorg-x11-xbitmaps
 ```
    The Fedora-26 package for XEmacs includes MULE, and the APL key mapping fails.  
-   You ned to download and build the source for XEmancs 21.5.34 without MULE.
+   You ned to download and build the source for XEmacs 21.5.34 without MULE.
 
    You will need to make changes to
 ```
