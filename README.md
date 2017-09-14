@@ -45,6 +45,21 @@
      termcap.c
      gmalloc.c
 ```
+   Building XEmacs
+```
+    sudo mkdir /usr/local/src/xemacs
+    cd /usr/local/src/xemacs  
+    tar xzf /tmp/xemacs-21.5.34.tar.gz
+    ./configure 
+    make  
+    make install
+```
+   Followed by installing the packages
+```
+    sudo mkdir -p /usr/local/share/xemacs
+    cd /usr/local/share/xemacs
+    tar xzf /tmp/xemacs-sumo.tar.gz
+```
    Once the build is good, create the following file:
 ```
    cat ~/.xemacs/init.el
