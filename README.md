@@ -34,7 +34,7 @@
 
 ## XEmacs Setup
    The Fedora-26 package for XEmacs includes MULE, and the APL key mapping fails.  
-   You ned to download and build the source for XEmacs 21.5.34 without MULE.
+   You need to download and build the source for XEmacs 21.5.34 without MULE.  
    For a successful build, you wll need to install X11-bitmaps
 ```
    sudo dnf install xorg-x11-xbitmaps
