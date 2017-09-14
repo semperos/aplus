@@ -33,20 +33,19 @@
 ```
 
 ## XEmacs Setup
-   You wll need to install X11-bitmaps
+   The Fedora-26 package for XEmacs includes MULE, and the APL key mapping fails.  
+   You ned to download and build the source for XEmacs 21.5.34 without MULE.
+   For a successful build, you wll need to install X11-bitmaps
 ```
    sudo dnf install xorg-x11-xbitmaps
 ```
-   The Fedora-26 package for XEmacs includes MULE, and the APL key mapping fails.  
-   You ned to download and build the source for XEmacs 21.5.34 without MULE.
-
-   You will need to make changes to
+   I needed to make minor changes to
 ```
      lisp.h
      termcap.c
      gmalloc.c
 ```
-   Create the following file:
+   Once the build is good, create the following file:
 ```
    cat ~/.xemacs/init.el
    (load "/usr/local/aplus/lisp.0/aplus")
