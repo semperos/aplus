@@ -50,15 +50,20 @@
    cat ~/.xemacs/init.el
    (load "/usr/local/aplus/lisp.0/aplus")
 ```
-   Note that it is lisp.0 (not lisp.1)
+   Note that it is lisp.0 (not lisp.1)  
+   You will need to make some minor modifications to  
+   /usr/local/aplus/lisp.0/aplus.el  
 
    You need to create a directory for the KAPL fonts:
 ```
    sudo mkdir /usr/local/share/lib/X11/fonts/misc
    cp ~/aplus/src/fonts/X11/pcf/K* /usr/local/share/lib/X11/fonts/misc/
+   cd /usr/local/share/lib/X11/fonts/misc/
+   mkfontdir
+   cp Kapl.alias fonts.alias
 ```
-
-   Everytime Fedora-26 is restarted you need to notify X11 of the additional fonts:
+   Then you need to notify X11 of the additional fonts (and where to find them).  
+   This notification needs to be done whenever Fedora-26 is restarted.
 ```
    cd /usr/local/share/lib/X11/fonts/misc
    xset fp+ /usr/local/share/lib/X11/fonts/misc
