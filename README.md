@@ -34,8 +34,9 @@
 ```
 
 ## XEmacs Setup
-   The Fedora-26 package for XEmacs includes MULE, and the APL key mapping fails.  
-   You need to download and build the source for XEmacs 21.5.34 without MULE.  
+   The APL key mapping fails when using the Fedora-26 package for XEmacs.  
+   My guess is that the package includes MULE “MUlti-Lingual Emacs”.  
+   I downloaded and built the source for XEmacs 21.5.34 without MULE (and that worked).  
    For a successful build, you wll need to install X11-bitmaps
 ```
    sudo dnf install xorg-x11-xbitmaps
