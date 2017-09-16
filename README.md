@@ -15,7 +15,7 @@
     CFLAGS=-O2 CXXFLAGS=-O2
     ./configure --prefix=/usr/local
     make
-    make install
+    sudo make install
 ```
    Verify that the build is successful,
 ```
