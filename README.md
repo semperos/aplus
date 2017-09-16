@@ -43,24 +43,24 @@
 ```
    I needed to make minor changes to
 ```
-     lisp.h
-     termcap.c
-     gmalloc.c
+   lisp.h
+   termcap.c
+   gmalloc.c
 ```
    Building XEmacs
 ```
-    sudo mkdir /usr/local/src/xemacs
-    cd /usr/local/src/xemacs  
-    tar xzf /tmp/xemacs-21.5.34.tar.gz
-    ./configure 
-    make  
-    make install
+   sudo mkdir /usr/local/src/xemacs
+   cd /usr/local/src/xemacs  
+   sudo tar xzf /tmp/xemacs-21.5.34.tar.gz
+   ./configure 
+   sudo make  
+   sudo make install
 ```
    Followed by installing the packages
 ```
-    sudo mkdir -p /usr/local/share/xemacs
-    cd /usr/local/share/xemacs
-    tar xzf /tmp/xemacs-sumo.tar.gz
+   sudo mkdir -p /usr/local/share/xemacs
+   cd /usr/local/share/xemacs
+   sudo tar xzf /tmp/xemacs-sumo.tar.gz
 ```
    Once the build is good, create the following file:
 ```
@@ -74,10 +74,10 @@
    You need to create a directory for the KAPL fonts:
 ```
    sudo mkdir /usr/local/share/lib/X11/fonts/misc
-   cp ~/aplus/src/fonts/X11/pcf/K* /usr/local/share/lib/X11/fonts/misc/
+   sudo cp ~/aplus/src/fonts/X11/pcf/K* /usr/local/share/lib/X11/fonts/misc/
    cd /usr/local/share/lib/X11/fonts/misc/
-   mkfontdir
-   cp Kapl.alias fonts.alias
+   sudo mkfontdir
+   sudo cp Kapl.alias fonts.alias
 ```
    Then you need to notify X11 of the additional fonts (and where to find them).  
    This notification needs to be done whenever Fedora-26 is restarted.
