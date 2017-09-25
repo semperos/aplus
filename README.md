@@ -1,8 +1,7 @@
 
 ## Introduction
    see http://www.aplusdev.org/  
-   This file documents a successful build of A+ on Fedora-26 with XEmcacs 21-4.34.  
-   This documentation may be incomplete (I'm writing it after the fact, and the process was not straightforward).
+   This file documents a successful build of A+ on Fedora-26 with XEmcacs 21-4.34. 
 
 ## Preparation
    This repository was created by pulling down the source code (A+ 4.22-4) from  http://www.aplusdev.org/Download/index.html  
