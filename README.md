@@ -12,7 +12,7 @@
     git clone https://github.com/tavmem/aplus
     cd aplus
     CFLAGS=-O2 CXXFLAGS=-O2
-    ./configure --prefix=/usr/local
+    ./configure --prefix=/usr/local --libdir=/lib64
     make
     sudo make install
 ```
